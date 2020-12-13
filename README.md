@@ -1,0 +1,2 @@
+# Morfeo
+Human beings require 8 hours of sleep to perform efficiently in their day to day and stay healthy. In multiple studies carried out by NASA and MMR, the results show that astronauts do not meet this requirement, sleeping on average 6 hours daily, which can cause fatigue, decreased cognitive activity, and motor skills. Morfeo is an application designed to help astronauts improve their quality of sleep by monitoring the hours and phases of sleep, food, exercise, medications, and the jetlag effect, unlike other applications.
