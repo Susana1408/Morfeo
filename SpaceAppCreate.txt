@@ -1,0 +1,124 @@
+create table Trip(
+ idTrip int  IDENTITY (1,1) PRIMARY KEY,
+launch datetime,
+arrivalTime datetime, 
+lauchPlace varchar(50)
+);
+
+create table Astronaut(
+idAstr int  not null IDENTITY (1,1) PRIMARY KEY, 
+idTrip int references Trip,
+passw varchar(50), 
+name varchar(30), 
+surname char(30), 
+birth datetime, 
+gender varchar(15), 
+weight	float, 
+height float, 
+nationality varchar(30)
+);
+ 
+create table Allergies(
+idAllergy int IDENTITY (1,1) PRIMARY KEY,
+allergy varchar(30)
+);
+create table ChronicDiseases(
+idCD int IDENTITY (1,1) PRIMARY KEY,
+chrDis varchar(40)
+);
+
+create table Medicines(
+idMed int IDENTITY (1,1) PRIMARY KEY,
+medicine varchar(30),
+typeAdm varchar(30), --type of administration,
+purpose varchar(30)
+);
+
+create table allergyAstr(
+idAlAstr int IDENTITY (1,1) PRIMARY KEY,
+idAllergy int references Allergies,
+idAstr int references Astronaut
+);
+
+create table chronicDiseaseAstr(
+idCDAstr int IDENTITY (1,1) PRIMARY KEY,
+idCD int references ChronicDiseases,
+idAstr int references Astronaut
+);
+
+create table MedAstr(
+idMedAstr int IDENTITY (1,1) PRIMARY KEY,
+idMed int references Medicines,
+idAstr int references Astronaut
+);
+
+create table MedChrDis(
+idMedCD int IDENTITY (1,1) PRIMARY KEY,
+idMed int references Medicines,
+idCD int references ChronicDiseases
+);
+
+create table Food(
+idFood int IDENTITY (1,1) PRIMARY KEY,
+foodN varchar(30),
+typeFood varchar(30), --type of Space food, 
+calories int, 
+vitamines varchar(100),
+sodium int,
+protein int,
+fiber int
+);
+
+create table Meals(
+idMeal int  IDENTITY (1,1) PRIMARY KEY,
+idAstr int references Astronaut,
+idFood int references Food,
+mealTime datetime,
+mealType varchar(30), --breakfast, lunch, dinner
+check(mealType in ('breakfast', 'lunch', 'dinner'))
+);
+
+
+create table caffeineConsumption(
+idCafCon int  IDENTITY (1,1) PRIMARY KEY,
+idAstr int references Astronaut, 
+timeCons datetime 
+);
+
+
+create table Sleep(
+idSleep int  IDENTITY (1,1) PRIMARY KEY,
+idAstr int references Astronaut,
+bedTime  datetime, 
+wakeupTime datetime, 
+interruptions int, 
+reasns varchar(200), 
+deepSleep bit not null,
+light varchar(40),
+circadianCycle varchar(200)
+);
+
+create table Nap(
+idAstr int references Astronaut,
+napTime datetime, 
+minutes int, --wakeTime - bedTime and only if is bigger tan an hour. 
+light varchar(40)
+);
+
+create table Equipment( 
+idEquip smallint IDENTITY (1,1) PRIMARY KEY, 
+equip varchar(30)
+);
+
+create table Exercise( 
+idExer int IDENTITY (1,1) PRIMARY KEY, 
+idAstr int references Astronaut, 
+idEquip smallint references Equipment,
+starT datetime, 
+endT dateTime,
+forceAmount int, 
+typeExe varchar(16)
+);
+
+
+

@@ -1,0 +1,293 @@
+		dateTime = '2016-12-21 00:00:00.000'
+
+OBTENER SOLO EL TIME
+		SELECT cast(dateT as time) [time] FROM Food
+
+
+-----------------INSERTS-----------------------
+insert into Trip(launch, arrivalTime, lauchPlace) values ( '2020-12-21 14:00:00.000', '2020-12-22 09:00:00.000', 'Cape Canaveral Air Force Station')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, '123Nasa*', 'Christopher', 'Cassidy', '1970-01-04 00:00:00.000', 'Male', 200, 6, 'american')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, '789Nasa**', 'Elisa', 'Espinosa', '2000
+06-26 00:00:00.000', 'Female', 112, 5.2, 'mexican')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, '555Nasa**', 'Diana', 'Espinosa', '2000-06-26 00:00:00.000', 'Female', 112, 5.2, 'mexican')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, 'Nasa*354*', 'Susana', 'Tristan', '2000-08-14 00:00:00.000', 'Female', 118, 5.7, 'mexican')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, 'Nasa*34*', 'Perla', 'Sanchez', '2000-03-07 00:00:00.000', 'Female', 120, 6, 'mexican')
+
+insert into Astronaut(idTrip, passw, name, surname, birth, gender, weight, height, nationality) 
+values (1, 'Nasa*854*', 'Ale', 'Soto', '2000-09-27 00:00:00.000', 'Female', 110, 5, 'mexican')
+
+insert into Allergies(allergy) values ('No Allergy')
+insert into Allergies(allergy) values ('Strawberry')
+insert into Allergies(allergy) values ('cortisone')
+insert into Allergies(allergy) values ('paracetamol')
+insert into Allergies(allergy) values ('nut')
+
+insert into allergyAstr(idAllergy, idAstr) values (1,2)
+insert into allergyAstr(idAllergy, idAstr) values (2,6)
+insert into allergyAstr(idAllergy, idAstr) values (4,5)
+insert into allergyAstr(idAllergy, idAstr) values (5,4)
+insert into allergyAstr(idAllergy, idAstr) values (6,3)
+
+insert into food(foodN, typeFood) values 
+('Tuna fish', 'Thermostabilized')
+insert into food(foodN, typeFood) values 
+('Dried peaches', 'Intermediate Moisture')
+insert into food(foodN, typeFood) values 
+('Pears', 'Intermediate Moisture')
+insert into food(foodN, typeFood) values 
+('Apricots', 'Intermediate Moisture')
+insert into food(foodN, typeFood) values 
+('Granola', 'Natural Form')
+insert into food(foodN, typeFood) values 
+('Nuts', 'Natural Form')
+insert into food(foodN, typeFood) values 
+('Chicken pot pie', 'Frozen Food')
+insert into food(foodN, typeFood) values 
+('Casserole', 'Frozen Food')
+insert into food(foodN, typeFood) values 
+('Apples', 'Fresh')
+insert into food(foodN, typeFood) values 
+('Bananas', 'Fresh')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 6, '2020-09-21 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 6, '2020-09-22 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 10, '2020-09-23 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 6, '2020-09-24 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 10, '2020-09-25 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 6, '2020-09-26 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 10, '2020-09-27 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 10, '2020-09-28 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 9, '2020-09-29 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 9, '2020-09-30 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 6, '2020-10-01 07:30:00.000', 'breakfast')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 6, '2020-09-21 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 6, '2020-09-22 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 10, '2020-09-23 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 9, '2020-09-24 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 9, '2020-09-25 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 10, '2020-09-26 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 10, '2020-09-27 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 10, '2020-09-28 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 9, '2020-09-29 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 9, '2020-09-30 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 6, '2020-10-01 07:30:00.000', 'breakfast')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 7, '2020-09-21 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 6, '2020-09-22 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 10, '2020-09-23 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 10, '2020-09-24 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 10, '2020-09-25 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 6, '2020-09-26 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 10, '2020-09-27 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 7, '2020-09-28 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 10, '2020-09-29 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 9, '2020-09-30 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 6, '2020-10-01 07:30:00.000', 'breakfast')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 6, '2020-09-21 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 6, '2020-09-22 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 10, '2020-09-23 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 9, '2020-09-24 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 7, '2020-09-25 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 10, '2020-09-26 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 10, '2020-09-27 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 10, '2020-09-28 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 7, '2020-09-29 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 9, '2020-09-30 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 7, '2020-10-01 07:30:00.000', 'breakfast')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 7, '2020-09-21 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 7, '2020-09-22 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 10, '2020-09-23 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 9, '2020-09-24 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 9, '2020-09-25 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 10, '2020-09-26 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 10, '2020-09-27 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 7, '2020-09-28 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 9, '2020-09-29 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 6, '2020-09-30 07:30:00.000', 'breakfast')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 9, '2020-10-01 07:30:00.000', 'breakfast')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-21 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-22 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-23 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-24 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-25 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-26 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-27 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-28 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-29 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-09-30 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2, 1, '2020-10-01 13:00:00.000', 'lunch')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-21 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-22 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 2, '2020-09-23 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 3, '2020-09-24 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-25 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-26 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 4, '2020-09-27 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-28 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 6, '2020-09-29 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-09-30 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3, 1, '2020-10-01 13:00:00.000', 'lunch')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-21 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-22 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 2, '2020-09-23 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 3, '2020-09-24 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-25 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-26 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 4, '2020-09-27 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-28 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 6, '2020-09-29 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-09-30 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4, 1, '2020-10-01 13:00:00.000', 'lunch')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-21 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-22 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 2, '2020-09-23 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 3, '2020-09-24 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-25 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-26 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 4, '2020-09-27 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-28 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 6, '2020-09-29 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-09-30 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5, 1, '2020-10-01 13:00:00.000', 'lunch')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-21 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-22 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 2, '2020-09-23 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 3, '2020-09-24 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-25 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-26 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 4, '2020-09-27 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-28 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 6, '2020-09-29 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-09-30 13:00:00.000', 'lunch')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6, 1, '2020-10-01 13:00:00.000', 'lunch')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,7 , '2020-09-21 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,7, '2020-09-22 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8 , '2020-09-23 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-09-24 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-09-25 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-09-26 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,7, '2020-09-27 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,7, '2020-09-28 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-09-29 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-09-30 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(6,8, '2020-10-01 19:00:00.000', 'dinner')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,7 , '2020-09-21 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,7, '2020-09-22 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8 , '2020-09-23 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-09-24 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-09-25 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-09-26 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,7, '2020-09-27 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,7, '2020-09-28 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-09-29 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-09-30 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(4,8, '2020-10-01 19:00:00.000', 'dinner')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,7 , '2020-09-21 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,7, '2020-09-22 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8 , '2020-09-23 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-09-24 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-09-25 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-09-26 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,7, '2020-09-27 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,7, '2020-09-28 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-09-29 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-09-30 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(3,8, '2020-10-01 19:00:00.000', 'dinner')
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,7 , '2020-09-21 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,7, '2020-09-22 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8 , '2020-09-23 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-09-24 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-09-25 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-09-26 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,7, '2020-09-27 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,7, '2020-09-28 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-09-29 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-09-30 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(2,8, '2020-10-01 19:00:00.000', 'dinner')
+
+
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,7 , '2020-09-21 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,7, '2020-09-22 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8 , '2020-09-23 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-09-24 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-09-25 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-09-26 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,7, '2020-09-27 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,7, '2020-09-28 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-09-29 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-09-30 19:00:00.000', 'dinner')
+insert into meals(idAstr, idFood, mealTime, mealType) values(5,8, '2020-10-01 19:00:00.000', 'dinner')
+
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-21 21:00:00.000','2020-09-22 05:00:00.000', 2, 'stomache', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-22 21:00:00.000','2020-09-23 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-23 21:00:00.000','2020-09-24 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-24 21:00:00.000','2020-09-25 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-25 21:00:00.000','2020-09-26 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-26 21:00:00.000','2020-09-27 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-27 21:00:00.000','2020-09-28 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-28 21:00:00.000','2020-09-29 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-29 21:00:00.000','2020-09-30 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-09-30 21:00:00.000','2020-10-01 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (2,'2020-10-01 21:00:00.000','2020-10-02 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-21 21:00:00.000','2020-09-22 05:00:00.000', 2, 'stomache', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-22 21:00:00.000','2020-09-23 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-23 21:00:00.000','2020-09-24 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-24 21:00:00.000','2020-09-25 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-25 21:00:00.000','2020-09-26 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-26 21:00:00.000','2020-09-27 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-27 21:00:00.000','2020-09-28 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-28 21:00:00.000','2020-09-29 03:00:00.000', 0, 'insomnia', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-29 21:00:00.000','2020-09-30 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-09-30 21:00:00.000','2020-10-01 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+insert into sleep(idAstr, bedTime, wakeupTime, interruptions, reasns, deepSleep,light) values (3,'2020-10-01 21:00:00.000','2020-10-02 05:00:00.000', 0, 'no interruption', 1,'low intense blue')
+
+insert into nap(napTime, minutes, light) values ( '2020-09-29 15:00:00.000', 120, 'low intense blue')
+insert into equipment(equip) values ('bicycle')
+insert into equipment(equip) values ('treadmill')
+insert into equipment(equip) values ('ARED')
+
+insert into Exercise(idAstr,idEquip, starT, endT) values(2, 1, '2020-09-29 10:30:00.000', '2020-09-29 11:20:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT) values(2, 2, '2020-09-29 11:20:00.000', '2020-09-29 12:10:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT, forceAmount) values(2, 3, '2020-09-29 12:10:00.000', '2020-09-29 13:00:00.000', 200 )
+
+
+insert into Exercise(idAstr,idEquip, starT, endT) values(3, 1, '2020-09-29 11:30:00.000', '2020-09-29 12:10:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT) values(3, 2, '2020-09-29 12:10:00.000', '2020-09-29 13:00:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT, forceAmount) values(3, 3, '2020-09-29 10:30:00.000', '2020-09-29 11:20:00.000', 200 )
+
+
+insert into Exercise(idAstr,idEquip, starT, endT) values(4, 1, '2020-09-29 12:10:00.000', '2020-09-29 13:00:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT) values(4, 2, '2020-09-29 10:30:00.000', '2020-09-29 11:20:00.000' )
+insert into Exercise(idAstr,idEquip, starT, endT, forceAmount) values(4, 3, '2020-09-29 11:20:00.000', '2020-09-29 12:10:00.000', 200 )
+
+
